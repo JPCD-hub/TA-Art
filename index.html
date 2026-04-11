@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiana Agudelo Art | Tattoo Artist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-name">Tatiana Agudelo</span>
+                <span class="logo-art">Art</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#body-mods">Perforations</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+            
+            <!-- Suminagashi Marbling Background -->
+            <svg class="suminagashi-bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="sumiGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--purple-vibrant);stop-opacity:0.35" />
+                        <stop offset="50%" style="stop-color:var(--purple-soft);stop-opacity:0.25" />
+                        <stop offset="100%" style="stop-color:var(--purple-light);stop-opacity:0.15" />
+                    </linearGradient>
+                    <linearGradient id="sumiGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--purple-soft);stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:var(--purple-light);stop-opacity:0.2" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Main flowing waves -->
+                <path class="sumi-main" d="M-50,80 C100,60 200,120 350,100 C500,80 600,140 750,120 C900,100 1000,160 1150,140 C1300,120 1400,180 1500,160" />
+                <path class="sumi-main" d="M-50,120 C120,100 220,160 380,140 C540,120 640,180 800,160 C960,140 1060,200 1220,180 C1380,160 1450,220 1500,200" />
+                <path class="sumi-main" d="M-50,160 C140,140 240,200 420,180 C600,160 680,220 860,200 C1040,180 1120,240 1300,220 C1420,200 1470,260 1500,240" />
+                <path class="sumi-main" d="M-50,200 C160,180 260,240 460,220 C660,200 720,260 920,240 C1120,220 1180,280 1380,260 C1450,240 1490,300 1500,280" />
+                
+                <!-- Reverse flowing waves -->
+                <path class="sumi-main" d="M1500,100 C1400,120 1300,180 1150,160 C1000,140 900,200 750,180 C600,160 500,220 350,200 C200,180 100,240 -50,220" />
+                <path class="sumi-main" d="M1500,140 C1380,160 1280,220 1120,200 C960,180 860,240 700,220 C540,200 440,260 280,240 C120,220 60,280 -50,260" />
+
+                <!-- Large swirl clusters - organic suminagashi circles -->
+                <!-- Swirl group 1 - upper left -->
+                <path class="sumi-swirl" d="M250,250 C230,230 200,250 210,280 C220,310 260,320 290,300 C320,280 330,240 310,210 C290,180 240,170 210,190 C180,210 170,250 190,280 C210,310 250,330 280,310" />
+                <path class="sumi-swirl" d="M250,235 C235,220 210,235 218,260 C226,285 258,295 282,280 C306,265 315,230 300,205 C285,180 245,172 218,188 C191,204 182,238 200,263 C218,288 245,300 268,288" />
+                <path class="sumi-swirl" d="M250,242 C240,232 225,242 230,260 C235,278 255,286 272,276 C289,266 295,245 285,228 C275,211 250,205 232,214 C214,223 206,241 215,255 C224,269 240,278 258,272" />
+
+                <!-- Swirl group 2 - center -->
+                <path class="sumi-swirl" d="M700,300 C680,280 650,300 660,330 C670,360 710,370 740,350 C770,330 780,290 760,260 C740,230 690,220 660,240 C630,260 620,300 640,330 C660,360 700,380 730,360" />
+                <path class="sumi-swirl" d="M700,288 C685,273 660,288 668,310 C676,332 708,340 730,330 C752,320 760,295 745,275 C730,255 698,248 672,260 C646,272 638,298 652,315 C666,332 690,340 712,332" />
+                <path class="sumi-swirl" d="M700,294 C692,286 680,294 684,308 C688,322 704,328 718,322 C732,316 738,302 730,292 C722,282 708,278 696,282 C684,286 680,296 686,302 C692,308 700,314 710,312" />
+
+                <!-- Swirl group 3 - upper right -->
+                <path class="sumi-swirl" d="M1150,250 C1130,230 1100,250 1110,280 C1120,310 1160,320 1190,300 C1220,280 1230,240 1210,210 C1190,180 1140,170 1110,190 C1080,210 1070,250 1090,280 C1110,310 1150,330 1180,310" />
+                <path class="sumi-swirl" d="M1150,238 C1135,223 1110,238 1118,260 C1126,282 1158,290 1178,280 C1198,270 1205,245 1192,225 C1179,205 1152,198 1126,210 C1100,222 1092,248 1104,265 C1116,282 1138,290 1158,282" />
+                <path class="sumi-swirl" d="M1150,244 C1142,236 1130,244 1134,258 C1138,272 1154,278 1166,272 C1178,266 1182,252 1176,242 C1170,232 1158,228 1148,232 C1138,236 1134,246 1138,252 C1142,258 1148,264 1158,262" />
+
+                <!-- Middle flowing waves -->
+                <path class="sumi-mid" d="M-50,350 C150,330 250,390 450,370 C650,350 700,410 920,390 C1140,370 1200,430 1400,410 C1480,400 1520,450 1500,430" />
+                <path class="sumi-mid" d="M-50,390 C180,370 280,430 500,410 C720,390 780,450 1000,430 C1220,410 1280,470 1500,450" />
+                <path class="sumi-mid" d="M-50,430 C200,410 300,470 550,450 C800,430 850,490 1100,470 C1350,450 1400,510 1500,490" />
+                <path class="sumi-mid" d="M-50,470 C220,450 320,510 600,490 C880,470 920,530 1200,510 C1400,490 1450,550 1500,530" />
+                
+                <!-- Reverse middle waves -->
+                <path class="sumi-mid" d="M1500,350 C1300,370 1200,430 980,410 C760,390 720,450 500,430 C280,410 220,470 0,450 C-30,440 -40,490 -50,470" />
+                <path class="sumi-mid" d="M1500,390 C1280,410 1180,470 960,450 C740,430 700,490 480,470 C260,450 200,510 -20,490 C-40,480 -45,530 -50,510" />
+
+                <!-- Lower flowing waves -->
+                <path class="sumi-mid" d="M-50,550 C150,530 250,590 450,570 C650,550 700,610 920,590 C1140,570 1200,630 1400,610 C1480,600 1520,650 1500,630" />
+                <path class="sumi-mid" d="M-50,590 C180,570 280,630 500,610 C720,590 780,650 1000,630 C1220,610 1280,670 1500,650" />
+                <path class="sumi-mid" d="M1500,550 C1300,570 1200,630 980,610 C760,590 720,650 500,630 C280,610 220,670 0,650 C-30,640 -40,690 -50,670" />
+
+                <!-- Accent detail lines -->
+                <path class="sumi-detail" d="M-50,280 C120,260 220,320 380,300 C540,280 640,340 800,320 C960,300 1060,360 1220,340 C1380,320 1450,380 1500,360" />
+                <path class="sumi-detail" d="M1500,280 C1380,300 1280,360 1120,340 C960,320 860,380 700,360 C540,340 440,400 280,380 C120,360 60,420 -50,400" />
+                <path class="sumi-detail" d="M-50,500 C140,480 240,540 420,520 C600,500 680,560 860,540 C1040,520 1120,580 1300,560 C1420,540 1470,600 1500,580" />
+                <path class="sumi-detail" d="M1500,500 C1360,520 1260,580 1100,560 C940,540 840,600 680,580 C520,560 420,620 260,600 C100,580 40,640 -50,620" />
+
+                <!-- Small accent swirls -->
+                <path class="sumi-accent" d="M200,350 C215,340 230,355 225,370 C220,385 195,390 188,378 C181,366 188,358 200,350" />
+                <path class="sumi-accent" d="M500,300 C515,290 530,305 525,320 C520,335 495,340 488,328 C481,316 488,308 500,300" />
+                <path class="sumi-accent" d="M900,350 C915,340 930,355 925,370 C920,385 895,390 888,378 C881,366 888,358 900,350" />
+                <path class="sumi-accent" d="M1300,300 C1315,290 1330,305 1325,320 C1320,335 1295,340 1288,328 C1281,316 1288,308 1300,300" />
+                <path class="sumi-accent" d="M350,500 C365,490 380,505 375,520 C370,535 345,540 338,528 C331,516 338,508 350,500" />
+                <path class="sumi-accent" d="M750,450 C765,440 780,455 775,470 C770,485 745,490 738,478 C731,466 738,458 750,450" />
+                <path class="sumi-accent" d="M1150,500 C1165,490 1180,505 1175,520 C1170,535 1145,540 1138,528 C1131,516 1138,508 1150,500" />
+
+                <!-- Extra flowing curves -->
+                <path class="sumi-flow" d="M100,200 C200,190 280,250 380,240 C480,230 520,290 620,280 C720,270 760,330 860,320 C960,310 1000,370 1100,360 C1200,350 1240,410 1340,400 C1440,390 1480,450 1500,440" />
+                <path class="sumi-flow" d="M1500,200 C1400,210 1360,270 1260,260 C1160,250 1120,310 1020,300 C920,290 880,350 780,340 C680,330 640,390 540,380 C440,370 400,430 300,420 C200,410 160,470 60,460 C-40,450 -45,510 -50,500" />
+                <path class="sumi-flow" d="M50,450 C150,440 230,500 330,490 C430,480 470,540 570,530 C670,520 710,580 810,570 C910,560 950,620 1050,610 C1150,600 1190,660 1290,650 C1390,640 1430,700 1500,690" />
+                <path class="sumi-flow" d="M1500,450 C1400,460 1360,520 1260,510 C1160,500 1120,560 1020,550 C920,540 880,600 780,590 C680,580 640,640 540,630 C440,620 400,680 300,670 C200,660 160,720 60,710 C-40,700 -45,760 -50,750" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <p class="hero-label reveal-text">Tattoo Artist</p>
+            <h1 class="hero-title reveal-text-delay-1">Tatiana Agudelo</h1>
+            <p class="hero-description reveal-text-delay-2">Where art meets skin. Every tattoo tells a story.</p>
+            <div class="hero-actions reveal-text-delay-3">
+                <a href="#gallery" class="btn-primary-apple">View Portfolio</a>
+                <a href="#contact" class="btn-secondary-apple">Book Session</a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="bio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About the Artist</h2>
+                <p class="section-subtitle">Passion, precision, and purpose in every line</p>
+            </div>
+            <div class="bio-grid">
+                <div class="bio-visual">
+                    <div class="bio-image-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <span>Your Photo Here</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio-content">
+                    <div class="bio-main">
+                        <h3 class="bio-name">Tatiana Agudelo</h3>
+                        <p class="bio-intro">
+                            Welcome to my creative space. I'm a tattoo artist who believes that every piece of body art should be as unique as the person wearing it. My approach combines technical precision with artistic vision to create tattoos that truly resonate with your story.
+                        </p>
+                        <p class="bio-philosophy">
+                            I specialize in creating custom designs that flow naturally with your body's contours. Every consultation is a conversation—I listen, understand, and translate your ideas into artwork that will stay with you for life.
+                        </p>
+                    </div>
+                    <div class="bio-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-number">500+</div>
+                            <div class="highlight-label">Tattoos Created</div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-number">5+</div>
+                            <div class="highlight-label">Years of Experience</div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-number">100%</div>
+                            <div class="highlight-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">A curated selection of recent work</p>
+            </div>
+            
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="blackwork">Blackwork</button>
+                <button class="filter-btn" data-filter="dotwork">Dotwork</button>
+                <button class="filter-btn" data-filter="sombreado">Sombreado de Arrastre</button>
+            </div>
+
+            <div class="gallery-masonry">
+                <div class="gallery-item" data-category="blackwork">
+                    <div class="gallery-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project 01</span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Bold Blackwork</h4>
+                        <p>Strong, solid design</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="dotwork">
+                    <div class="gallery-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project 02</span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Dotwork Mandala</h4>
+                        <p>Precision dot patterns</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sombreado">
+                    <div class="gallery-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project 03</span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Sombreado Piece</h4>
+                        <p>Dragged shading technique</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="blackwork">
+                    <div class="gallery-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project 04</span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Geometric Blackwork</h4>
+                        <p>Abstract patterns</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="dotwork">
+                    <div class="gallery-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project 05</span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Stippling Art</h4>
+                        <p>Detailed dot shading</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sombreado">
+                    <div class="gallery-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project 06</span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Arrastre Shading</h4>
+                        <p>Smooth gradients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Modifications Section -->
+    <section id="body-mods" class="body-mods-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perforations</h2>
+                <p class="section-subtitle">Professional body perforation services</p>
+            </div>
+
+            <!-- Perforations Section -->
+            <div class="mod-category">
+                <div class="perforation-grid">
+                    <div class="perforation-card">
+                        <div class="perforation-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h4>Stretching</h4>
+                        <p>Ear lobe and other stretching services with proper aftercare guidance and quality jewelry.</p>
+                    </div>
+                    <div class="perforation-card">
+                        <div class="perforation-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h4>Microdermals</h4>
+                        <p>Single-point anchor implants placed with sterile technique for a clean, professional result.</p>
+                    </div>
+                    <div class="perforation-card">
+                        <div class="perforation-icon">
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                        <h4>Surface Anchors</h4>
+                        <p>Custom placement surface piercings designed to complement your body's natural contours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consultation CTA -->
+            <div class="mods-cta">
+                <h3>Ready to Express Yourself?</h3>
+                <p>Every modification is a personal journey. Book a consultation to discuss your vision, safety, and aftercare.</p>
+                <a href="#contact" class="btn-primary-apple">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects & Events</h2>
+                <p class="section-subtitle">Where I'll be next</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-date-badge">
+                        <span class="month">MAR</span>
+                        <span class="day">2026</span>
+                    </div>
+                    <div class="project-content-apple">
+                        <span class="project-tag">Convention</span>
+                        <h3>International Tattoo Convention</h3>
+                        <p>Live tattoo demonstrations and guest artist collaborations at this year's premier tattoo event.</p>
+                        <a href="#contact" class="text-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-date-badge">
+                        <span class="month">FEB</span>
+                        <span class="day">2026</span>
+                    </div>
+                    <div class="project-content-apple">
+                        <span class="project-tag">Exhibition</span>
+                        <h3>Contemporary Body Art Gallery</h3>
+                        <p>Featured artist exploring the intersection of tattoo artistry and contemporary fine art.</p>
+                        <a href="#contact" class="text-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-date-badge">
+                        <span class="month">JAN</span>
+                        <span class="day">2026</span>
+                    </div>
+                    <div class="project-content-apple">
+                        <span class="project-tag">Workshop</span>
+                        <h3>Masterclass: Fine Line Techniques</h3>
+                        <p>An intensive workshop for aspiring artists focusing on precision and artistic development.</p>
+                        <a href="#contact" class="text-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info-panel">
+                    <h2 class="contact-heading">Let's Create<br>Something Beautiful</h2>
+                    <p class="contact-description">
+                        Ready to start your tattoo journey? Whether you have a detailed concept or just a spark of an idea, I'm here to help bring it to life.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Studio Location</h4>
+                                <p>Your City, Your Country</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@tatianaagudelo.art</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-panel">
+                        <span class="social-label">Follow Along</span>
+                        <div class="social-icon-group">
+                            <a href="https://www.instagram.com/tatianaagudelo.art" target="_blank" class="social-icon" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <form id="contactForm" class="apple-form">
+                        <div class="form-field">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Tattoo consultation">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your tattoo idea..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-apple">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="footer-name">Tatiana Agudelo</span>
+                        <span class="footer-art">Art</span>
+                    </a>
+                    <p class="footer-tagline">Transforming ideas into art, one tattoo at a time.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#bio">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.instagram.com/tatianaagudelo.art" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tatiana Agudelo Art. All rights reserved.</p>
+                <p class="made-with">Made with <i class="fas fa-heart"></i> and passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

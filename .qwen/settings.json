@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(www.instagram.com)",
+      "Bash(start *)"
+    ]
+  },
+  "$version": 3
+}
