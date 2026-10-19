@@ -2665,8 +2665,10 @@ body {
 }
 
 .hero-title {
-    background: linear-gradient(135deg, var(--white), var(--purple-light));
-    background-size: auto;
+    background: none;
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
+    text-shadow: 0 0 24px rgba(155, 109, 215, 0.3);
 }
 
 @keyframes gentleFloat {
