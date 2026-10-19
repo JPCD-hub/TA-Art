@@ -2640,8 +2640,8 @@ body {
 }
 
 .suminagashi-bg {
-    animation: suminagashiDrift 32s ease-in-out infinite alternate;
-    opacity: 0.38;
+    animation: suminagashiDrift 16s ease-in-out infinite alternate;
+    opacity: 0.48;
     transform-origin: center;
 }
 
@@ -2683,10 +2683,10 @@ body {
 
 @keyframes suminagashiDrift {
     from {
-        transform: translate3d(-1%, -0.5%, 0) scale(1.02) rotate(-0.15deg);
+        transform: translate3d(-3%, -2%, 0) scale(1.02) rotate(-0.35deg);
     }
     to {
-        transform: translate3d(1%, 0.5%, 0) scale(1.05) rotate(0.15deg);
+        transform: translate3d(3%, 2%, 0) scale(1.09) rotate(0.35deg);
     }
 }
 
@@ -2696,8 +2696,8 @@ body {
     }
 
     .suminagashi-bg {
-        animation-duration: 42s;
-        opacity: 0.3;
+        animation-duration: 22s;
+        opacity: 0.4;
     }
 
     .sphere-1 {
