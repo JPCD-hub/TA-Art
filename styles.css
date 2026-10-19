@@ -2640,8 +2640,9 @@ body {
 }
 
 .suminagashi-bg {
-    animation: none;
+    animation: suminagashiDrift 32s ease-in-out infinite alternate;
     opacity: 0.38;
+    transform-origin: center;
 }
 
 .sumi-main,
@@ -2680,10 +2681,23 @@ body {
     }
 }
 
+@keyframes suminagashiDrift {
+    from {
+        transform: translate3d(-1%, -0.5%, 0) scale(1.02) rotate(-0.15deg);
+    }
+    to {
+        transform: translate3d(1%, 0.5%, 0) scale(1.05) rotate(0.15deg);
+    }
+}
+
 @media (max-width: 1024px) {
-    .gradient-sphere,
-    .suminagashi-bg {
+    .gradient-sphere {
         animation: none;
+    }
+
+    .suminagashi-bg {
+        animation-duration: 42s;
+        opacity: 0.3;
     }
 
     .sphere-1 {
