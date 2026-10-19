@@ -20,21 +20,9 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Navbar scroll effect - Apple style
-let lastScrollY = window.scrollY;
+// Keep scroll work to one lightweight, frame-throttled update.
 const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    
-    if (currentScrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-    
-    lastScrollY = currentScrollY;
-});
+let scrollUpdateQueued = false;
 
 // Active navigation link
 const sections = document.querySelectorAll('section[id]');
@@ -61,7 +49,18 @@ function setActiveNav() {
     });
 }
 
-window.addEventListener('scroll', setActiveNav);
+function updateScrollState() {
+    navbar?.classList.toggle('scrolled', window.scrollY > 50);
+    setActiveNav();
+    scrollUpdateQueued = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!scrollUpdateQueued) {
+        scrollUpdateQueued = true;
+        window.requestAnimationFrame(updateScrollState);
+    }
+}, { passive: true });
 
 // ============================================
 // SMOOTH SCROLL - Apple Style
@@ -101,41 +100,6 @@ if (scrollHint) {
     });
 }
 
-// ============================================
-// HERO BACKGROUND PARALLAX ON SCROLL
-// ============================================
-const heroBg = document.querySelector('.hero-bg');
-const heroContent = document.querySelector('.hero-content');
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    const heroHeight = document.querySelector('.hero')?.offsetHeight || window.innerHeight;
-    
-    if (scrolled < heroHeight) {
-        // Parallax effect for background elements
-        if (heroBg) {
-            const spheres = heroBg.querySelectorAll('.gradient-sphere');
-            spheres.forEach((sphere, index) => {
-                const speed = 0.15 + (index * 0.05);
-                sphere.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        }
-        
-        // Fade out hero content on scroll
-        if (heroContent) {
-            const opacity = 1 - (scrolled / (heroHeight * 0.6));
-            const translateY = scrolled * 0.3;
-            heroContent.style.opacity = Math.max(0, opacity);
-            heroContent.style.transform = `translateY(${translateY}px)`;
-        }
-        
-        // Parallax for suminagashi
-        const suminagashi = document.querySelector('.suminagashi-bg');
-        if (suminagashi) {
-            suminagashi.style.transform = `translateY(${scrolled * 0.1}px) scale(${1 + scrolled * 0.0002})`;
-        }
-    }
-});
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -243,19 +207,6 @@ if (contactForm) {
         });
     });
 }
-
-// ============================================
-// PARALLAX EFFECTS - Subtle
-// ============================================
-window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    const spheres = document.querySelectorAll('.gradient-sphere');
-    
-    spheres.forEach((sphere, index) => {
-        const speed = 0.1 + (index * 0.05);
-        sphere.style.transform = `translateY(${scrolled * speed}px)`;
-    });
-});
 
 // ============================================
 // SMOOTH HOVER EFFECTS

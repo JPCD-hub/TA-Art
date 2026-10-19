@@ -2620,3 +2620,79 @@ body {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ============================================
+   HERO PERFORMANCE
+   ============================================ */
+.gradient-sphere {
+    filter: none;
+    opacity: 0.42;
+    animation: gentleFloat 34s ease-in-out infinite alternate;
+}
+
+.sphere-2 {
+    animation-duration: 42s;
+    animation-direction: alternate-reverse;
+}
+
+.sphere-3 {
+    animation-duration: 38s;
+}
+
+.suminagashi-bg {
+    animation: none;
+    opacity: 0.38;
+}
+
+.sumi-main,
+.sumi-mid,
+.sumi-detail,
+.sumi-flow,
+.sumi-swirl,
+.sumi-accent {
+    animation: none;
+    filter: none;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+}
+
+.hero::before,
+.hero::after,
+.hero-title,
+.hero-actions,
+.scroll-hint {
+    animation: none;
+}
+
+.hero-title {
+    background: linear-gradient(135deg, var(--white), var(--purple-light));
+    background-size: auto;
+}
+
+@keyframes gentleFloat {
+    from {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    to {
+        transform: translate3d(20px, -24px, 0) scale(1.04);
+    }
+}
+
+@media (max-width: 1024px) {
+    .gradient-sphere,
+    .suminagashi-bg {
+        animation: none;
+    }
+
+    .sphere-3,
+    .sumi-detail,
+    .sumi-flow,
+    .sumi-accent {
+        display: none;
+    }
+
+    .hero::before,
+    .hero::after {
+        display: none;
+    }
+}
