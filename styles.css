@@ -2456,3 +2456,167 @@ body {
 .footer-nav a:hover {
     padding-left: 10px;
 }
+
+/* ============================================
+   RESPONSIVE REFINEMENTS
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 1.25rem;
+    }
+
+    .bio-grid,
+    .contact-layout {
+        gap: 48px;
+    }
+
+    .bio-section,
+    .gallery-section,
+    .body-mods-section,
+    .projects-section,
+    .contact-section {
+        padding: 96px 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .nav-links {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        max-height: calc(100dvh - 72px);
+        overflow-y: auto;
+        background: rgba(12, 9, 17, 0.98);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 24px;
+        gap: 1.5rem;
+        transform: translateY(-110%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100svh;
+        padding: 112px 24px 96px;
+    }
+
+    .bio-section,
+    .gallery-section,
+    .body-mods-section,
+    .projects-section,
+    .contact-section {
+        padding: 80px 0;
+    }
+
+    .hero-actions {
+        width: min(100%, 340px);
+        margin: 0 auto;
+    }
+
+    .hero-actions .btn-primary-apple,
+    .hero-actions .btn-secondary-apple {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .scroll-hint {
+        bottom: 24px;
+    }
+
+    .project-card {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: clamp(2.25rem, 11vw, 2.75rem);
+    }
+
+    .section-title,
+    .contact-heading {
+        font-size: clamp(2.25rem, 10vw, 2.5rem);
+    }
+
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .bio-image-frame {
+        max-width: 340px;
+    }
+
+    .perforation-card,
+    .project-card,
+    .mods-cta {
+        padding: 28px 24px;
+    }
+
+    .contact-method {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 380px) {
+    .container,
+    .nav-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .logo-name {
+        font-size: 1.3rem;
+    }
+
+    .hero-description,
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .apple-form {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
