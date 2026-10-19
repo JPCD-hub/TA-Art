@@ -2686,6 +2686,10 @@ body {
         animation: none;
     }
 
+    .sphere-1 {
+        animation: gentleFloat 30s ease-in-out infinite alternate;
+    }
+
     .sphere-3,
     .sumi-detail,
     .sumi-flow,
