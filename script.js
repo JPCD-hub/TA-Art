@@ -175,6 +175,62 @@ filterBtns.forEach(btn => {
 });
 
 // ============================================
+// GALLERY LIGHTBOX
+// ============================================
+const galleryLightbox = document.getElementById('galleryLightbox');
+const lightboxImage = galleryLightbox?.querySelector('img');
+const lightboxClose = galleryLightbox?.querySelector('.gallery-lightbox-close');
+let lastGalleryFrame;
+
+function closeGalleryLightbox() {
+    if (!galleryLightbox) return;
+
+    galleryLightbox.classList.remove('is-open');
+    galleryLightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('gallery-lightbox-open');
+    lastGalleryFrame?.focus();
+}
+
+function openGalleryLightbox(image, frame) {
+    if (!galleryLightbox || !lightboxImage) return;
+
+    lastGalleryFrame = frame;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt;
+    galleryLightbox.classList.add('is-open');
+    galleryLightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('gallery-lightbox-open');
+    lightboxClose?.focus();
+}
+
+document.querySelectorAll('.gallery-frame img').forEach(image => {
+    const frame = image.closest('.gallery-frame');
+    if (!frame) return;
+
+    frame.classList.add('gallery-zoom');
+    frame.tabIndex = 0;
+    frame.setAttribute('role', 'button');
+    frame.setAttribute('aria-label', `Ampliar ${image.alt}`);
+    frame.addEventListener('click', () => openGalleryLightbox(image, frame));
+    frame.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openGalleryLightbox(image, frame);
+        }
+    });
+});
+
+lightboxClose?.addEventListener('click', closeGalleryLightbox);
+galleryLightbox?.addEventListener('click', event => {
+    if (event.target === galleryLightbox) closeGalleryLightbox();
+});
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && galleryLightbox?.classList.contains('is-open')) {
+        closeGalleryLightbox();
+    }
+});
+
+// ============================================
 // CONTACT FORM HANDLING
 // ============================================
 const contactForm = document.getElementById('contactForm');
