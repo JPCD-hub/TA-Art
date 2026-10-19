@@ -717,6 +717,26 @@ body {
     object-position: center;
 }
 
+.gallery-image-dotwork-15 {
+    object-position: center 34%;
+}
+
+.gallery-image-dotwork-16 {
+    object-position: center 45%;
+}
+
+.gallery-image-dotwork-17 {
+    object-position: center 52%;
+}
+
+.gallery-image-dotwork-18 {
+    object-position: center 48%;
+}
+
+.gallery-image-dotwork-19 {
+    object-position: center 46%;
+}
+
 .gallery-frame.gallery-zoom {
     cursor: zoom-in;
 }
