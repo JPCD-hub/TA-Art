@@ -709,6 +709,13 @@ body {
     transition: all 0.5s var(--transition-smooth);
 }
 
+.gallery-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 .gallery-item:hover .gallery-frame {
     transform: scale(1.03);
     box-shadow: 0 20px 60px rgba(61, 31, 109, 0.2);
