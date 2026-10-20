@@ -717,6 +717,21 @@ body {
     object-position: center;
 }
 
+.gallery-image-blackwork-1,
+.gallery-image-blackwork-3,
+.gallery-image-blackwork-4,
+.gallery-image-blackwork-5,
+.gallery-image-blackwork-6,
+.gallery-image-blackwork-8,
+.gallery-image-blackwork-9 {
+    object-position: center 50%;
+}
+
+.gallery-image-blackwork-2,
+.gallery-image-blackwork-7 {
+    object-position: center 55%;
+}
+
 .gallery-image-dotwork-15 {
     object-position: center 0%;
 }
