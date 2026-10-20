@@ -1246,6 +1246,15 @@ body.gallery-lightbox-open {
     gap: 16px;
 }
 
+a.contact-method {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.contact-method:hover .contact-text p {
+    color: var(--purple-light);
+}
+
 .contact-icon {
     width: 48px;
     height: 48px;
