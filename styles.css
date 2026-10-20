@@ -737,6 +737,30 @@ body {
     object-position: center 46%;
 }
 
+.gallery-image-color-1 {
+    object-position: center 50%;
+}
+
+.gallery-image-color-2 {
+    object-position: center 48%;
+}
+
+.gallery-image-color-3 {
+    object-position: center 52%;
+}
+
+.gallery-image-color-4 {
+    object-position: center 45%;
+}
+
+.gallery-image-color-5 {
+    object-position: center 48%;
+}
+
+.gallery-image-color-6 {
+    object-position: center 38%;
+}
+
 .gallery-frame.gallery-zoom {
     cursor: zoom-in;
 }
