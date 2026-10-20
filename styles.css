@@ -782,6 +782,15 @@ body {
     object-position: center 56%;
 }
 
+.gallery-image-lineafina-10,
+.gallery-image-lineafina-11 {
+    object-position: center 50%;
+}
+
+.gallery-image-lineafina-12 {
+    object-position: center 48%;
+}
+
 .gallery-frame.gallery-zoom {
     cursor: zoom-in;
 }
