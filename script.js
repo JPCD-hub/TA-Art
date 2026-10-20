@@ -232,39 +232,6 @@ document.addEventListener('keydown', event => {
 });
 
 // ============================================
-// CONTACT FORM HANDLING
-// ============================================
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        
-        // Apple-style success feedback
-        const submitBtn = contactForm.querySelector('.btn-submit');
-        const originalText = submitBtn.innerHTML;
-        
-        submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-        submitBtn.style.background = '#34c759';
-        
-        setTimeout(() => {
-            submitBtn.innerHTML = originalText;
-            submitBtn.style.background = '';
-            contactForm.reset();
-        }, 3000);
-        
-        console.log('Form submitted:', {
-            name: formData.get('name'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        });
-    });
-}
-
-// ============================================
 // SMOOTH HOVER EFFECTS
 // ============================================
 document.querySelectorAll('.gallery-item, .project-card, .highlight-card').forEach(card => {

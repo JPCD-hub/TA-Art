@@ -1310,8 +1310,7 @@ body.gallery-lightbox-open {
 
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: minmax(0, 640px);
     align-items: start;
 }
 
