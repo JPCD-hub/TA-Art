@@ -1035,7 +1035,7 @@ body.gallery-lightbox-open {
 
 .perforation-grid {
     display: grid;
-    grid-template-columns: minmax(0, 560px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
