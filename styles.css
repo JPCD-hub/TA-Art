@@ -761,6 +761,14 @@ body {
     object-position: center 38%;
 }
 
+.gallery-image-color-7 {
+    object-position: center 52%;
+}
+
+.gallery-image-color-8 {
+    object-position: center 55%;
+}
+
 .gallery-image-lineafina-1 {
     object-position: 20% center;
 }
@@ -798,6 +806,21 @@ body {
 }
 
 .gallery-image-lineafina-13 {
+    object-position: center 55%;
+}
+
+.gallery-image-lineafina-14,
+.gallery-image-lineafina-15,
+.gallery-image-lineafina-17,
+.gallery-image-lineafina-20 {
+    object-position: center 50%;
+}
+
+.gallery-image-lineafina-16 {
+    object-position: center 55%;
+}
+
+.gallery-image-lineafina-19 {
     object-position: center 55%;
 }
 
