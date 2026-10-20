@@ -718,7 +718,7 @@ body {
 }
 
 .gallery-image-dotwork-15 {
-    object-position: center 34%;
+    object-position: center 0%;
 }
 
 .gallery-image-dotwork-16 {
@@ -734,7 +734,7 @@ body {
 }
 
 .gallery-image-dotwork-19 {
-    object-position: center 46%;
+    object-position: center 28%;
 }
 
 .gallery-image-color-1 {
@@ -761,8 +761,14 @@ body {
     object-position: center 38%;
 }
 
-.gallery-image-lineafina-1,
-.gallery-image-lineafina-2,
+.gallery-image-lineafina-1 {
+    object-position: 20% center;
+}
+
+.gallery-image-lineafina-2 {
+    object-position: 25% center;
+}
+
 .gallery-image-lineafina-5 {
     object-position: center 50%;
 }
