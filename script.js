@@ -166,7 +166,7 @@ filterBtns.forEach(btn => {
         galleryItems.forEach((item, index) => {
             if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
                 item.classList.remove('hidden');
-                item.style.animation = `fadeInUp 0.6s ease ${index * 0.1}s both`;
+                item.style.animation = `fadeInUp 0.45s ease ${Math.min(index, 6) * 0.05}s both`;
             } else {
                 item.classList.add('hidden');
             }
