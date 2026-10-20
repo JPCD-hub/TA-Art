@@ -154,25 +154,26 @@ document.querySelectorAll('.scroll-animate').forEach(el => {
 const filterBtns = document.querySelectorAll('.filter-btn');
 const galleryItems = document.querySelectorAll('.gallery-item');
 
+function applyGalleryFilter(filterValue) {
+    galleryItems.forEach((item, index) => {
+        if (item.getAttribute('data-category') === filterValue) {
+            item.classList.remove('hidden');
+            item.style.animation = `fadeInUp 0.45s ease ${Math.min(index, 6) * 0.05}s both`;
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // Update active state
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        
-        const filterValue = btn.getAttribute('data-filter');
-        
-        // Filter items with animation
-        galleryItems.forEach((item, index) => {
-            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                item.classList.remove('hidden');
-                item.style.animation = `fadeInUp 0.45s ease ${Math.min(index, 6) * 0.05}s both`;
-            } else {
-                item.classList.add('hidden');
-            }
-        });
+        applyGalleryFilter(btn.getAttribute('data-filter'));
     });
 });
+
+applyGalleryFilter(document.querySelector('.filter-btn.active')?.getAttribute('data-filter'));
 
 // ============================================
 // GALLERY LIGHTBOX
