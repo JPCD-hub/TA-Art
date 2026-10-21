@@ -789,8 +789,14 @@ body {
 }
 
 .gallery-image-coverup-2,
-.gallery-image-coverup-3 {
+.gallery-image-coverup-3,
+.gallery-image-coverup-4,
+.gallery-image-coverup-6 {
     object-position: center 55%;
+}
+
+.gallery-image-coverup-5 {
+    object-position: center 50%;
 }
 
 .gallery-image-lineafina-1 {
