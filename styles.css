@@ -867,11 +867,11 @@ body {
     object-position: center 52%;
 }
 
-.gallery-frame.gallery-zoom {
+.gallery-zoom {
     cursor: zoom-in;
 }
 
-.gallery-frame.gallery-zoom:focus-visible {
+.gallery-zoom:focus-visible {
     outline: 3px solid var(--purple-light);
     outline-offset: 4px;
 }

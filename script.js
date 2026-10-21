@@ -204,19 +204,18 @@ function openGalleryLightbox(image, frame) {
     lightboxClose?.focus();
 }
 
-document.querySelectorAll('.gallery-frame img').forEach(image => {
-    const frame = image.closest('.gallery-frame');
-    if (!frame) return;
+document.querySelectorAll('.gallery-frame img, .perforation-photo-gallery img').forEach(image => {
+    const zoomTarget = image.closest('.gallery-frame') || image;
 
-    frame.classList.add('gallery-zoom');
-    frame.tabIndex = 0;
-    frame.setAttribute('role', 'button');
-    frame.setAttribute('aria-label', `Ampliar ${image.alt}`);
-    frame.addEventListener('click', () => openGalleryLightbox(image, frame));
-    frame.addEventListener('keydown', event => {
+    zoomTarget.classList.add('gallery-zoom');
+    zoomTarget.tabIndex = 0;
+    zoomTarget.setAttribute('role', 'button');
+    zoomTarget.setAttribute('aria-label', `Ampliar ${image.alt}`);
+    zoomTarget.addEventListener('click', () => openGalleryLightbox(image, zoomTarget));
+    zoomTarget.addEventListener('keydown', event => {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-            openGalleryLightbox(image, frame);
+            openGalleryLightbox(image, zoomTarget);
         }
     });
 });
