@@ -1065,6 +1065,7 @@ body.gallery-lightbox-open {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    align-items: start;
 }
 
 .piercing-card,
@@ -1118,6 +1119,26 @@ body.gallery-lightbox-open {
     font-size: 0.9375rem;
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+.perforation-photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.perforation-photo-gallery img {
+    width: 100%;
+    aspect-ratio: 1;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.perforation-photo-3 {
+    object-position: center 60%;
 }
 
 /* Modification grid */
