@@ -784,6 +784,15 @@ body {
     object-position: center 55%;
 }
 
+.gallery-image-coverup-1 {
+    object-position: center 50%;
+}
+
+.gallery-image-coverup-2,
+.gallery-image-coverup-3 {
+    object-position: center 55%;
+}
+
 .gallery-image-lineafina-1 {
     object-position: 20% center;
 }
