@@ -1857,11 +1857,12 @@ a.contact-method:hover .contact-text p {
 
 @media (max-width: 767px) {
     .hero-bg::before {
-        top: 54%;
-        left: clamp(-4rem, -9vw, -1.75rem);
-        width: clamp(10rem, 52vw, 15rem);
-        opacity: 0.11;
-        transform: translateY(-45%);
+        top: 5.5rem;
+        right: clamp(0.75rem, 4vw, 1.5rem);
+        left: auto;
+        width: clamp(8rem, 36vw, 10rem);
+        opacity: 0.12;
+        transform: none;
     }
 }
 
