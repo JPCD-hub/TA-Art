@@ -32,6 +32,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: clip;
 }
 
 body {
@@ -215,6 +216,7 @@ body {
     background: radial-gradient(circle at top, #211633 0%, var(--bg-primary) 58%);
     padding: 72px 40px 60px;
     text-align: center;
+    isolation: isolate;
 }
 
 .hero-bg {
@@ -224,6 +226,30 @@ body {
     right: 0;
     bottom: 0;
     pointer-events: none;
+}
+
+.hero-watermark {
+    position: absolute;
+    top: 50%;
+    left: clamp(-4rem, -2.5vw, -1.25rem);
+    z-index: 0;
+    width: clamp(22rem, 28vw, 31.25rem);
+    aspect-ratio: 1089 / 1445;
+    transform: translateY(-50%);
+    opacity: 0.2;
+    pointer-events: none;
+    user-select: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 70%, transparent 100%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 70%, transparent 100%);
+}
+
+.hero-watermark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(1) sepia(0.75) hue-rotate(210deg) saturate(1.75) brightness(0.9) contrast(0.95);
+    mix-blend-mode: screen;
 }
 
 .gradient-sphere {
@@ -949,6 +975,8 @@ body.gallery-lightbox-open {
    BODY MODIFICATIONS SECTION
    ============================================ */
 .body-mods-section {
+    position: relative;
+    overflow: hidden;
     padding: 120px 0;
     background: linear-gradient(180deg, #6b3fa0 0%, #8b5fbf 50%, #7b4fbf 100%);
     transition: all 0.6s var(--transition-smooth);
@@ -1721,6 +1749,14 @@ a.contact-method:hover .contact-text p {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-watermark {
+        left: clamp(-6rem, -7vw, -2rem);
+        width: clamp(18.75rem, 38vw, 22rem);
+        opacity: 0.16;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -1824,6 +1860,16 @@ a.contact-method:hover .contact-text p {
         flex-direction: column;
         gap: 12px;
         text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-watermark {
+        top: 54%;
+        left: clamp(-4rem, -9vw, -1.75rem);
+        width: clamp(10rem, 52vw, 15rem);
+        opacity: 0.11;
+        transform: translateY(-45%);
     }
 }
 
