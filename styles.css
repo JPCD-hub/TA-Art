@@ -1156,8 +1156,15 @@ body.gallery-lightbox-open {
     margin-top: 24px;
 }
 
+@media (min-width: 769px) {
+    .perforation-card:first-child .perforation-photo-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .perforation-photo-gallery img {
     width: 100%;
+    height: auto;
     aspect-ratio: 1;
     display: block;
     object-fit: cover;
