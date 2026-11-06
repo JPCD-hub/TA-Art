@@ -1,0 +1,6 @@
+# Para que Google aplique estas reglas, deben estar en la raíz del dominio.
+# GitHub Pages publica este archivo del proyecto en /TA-Art/robots.txt.
+User-agent: *
+Allow: /TA-Art/
+
+Sitemap: https://jpcd-hub.github.io/TA-Art/sitemap.xml

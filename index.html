@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatiana Agudelo Art | Artista del Tatuaje</title>
+    <title>Tatuajes y Piercings en Pereira | Tatiana Agudelo Art</title>
+    <meta name="description" content="Tatuajes personalizados y piercings en Pereira. Blackwork, dotwork, línea fina y cover-ups. Conoce el portafolio de Tatiana Agudelo y cotiza por WhatsApp.">
+    <link rel="canonical" href="https://jpcd-hub.github.io/TA-Art/">
+    <!-- Verificación de Google Search Console -->
+    <meta name="google-site-verification" content="dcygB5UJ_DTzho5Qdgq8_xQfOItuYRZx2S7ZgJBj4zU">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Tatiana Agudelo Art">
+    <meta property="og:title" content="Tatuajes y Piercings en Pereira | Tatiana Agudelo Art">
+    <meta property="og:description" content="Tatuajes personalizados y piercings en Pereira. Blackwork, dotwork, línea fina y cover-ups. Conoce el portafolio de Tatiana Agudelo y cotiza por WhatsApp.">
+    <meta property="og:url" content="https://jpcd-hub.github.io/TA-Art/">
+    <meta property="og:image" content="https://jpcd-hub.github.io/TA-Art/tatiana-agudelo-retrato.jpg">
+    <meta property="og:image:width" content="1089">
+    <meta property="og:image:height" content="1445">
+    <meta property="og:image:alt" content="Tatiana Agudelo mientras realiza un tatuaje">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tatuajes y Piercings en Pereira | Tatiana Agudelo Art">
+    <meta name="twitter:description" content="Tatuajes personalizados y piercings en Pereira. Blackwork, dotwork, línea fina y cover-ups. Conoce el portafolio de Tatiana Agudelo y cotiza por WhatsApp.">
+    <meta name="twitter:image" content="https://jpcd-hub.github.io/TA-Art/tatiana-agudelo-retrato.jpg">
+    <meta name="twitter:image:alt" content="Tatiana Agudelo mientras realiza un tatuaje">
+    <script>
+        document.documentElement.classList.replace('no-js', 'js');
+        document.documentElement.classList.add('gallery-pending');
+        window.setTimeout(() => document.documentElement.classList.remove('gallery-pending'), 5000);
+    </script>
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="taty-portada.webp" as="image" type="image/webp" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navegación -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
         <div class="nav-container">
             <a href="#home" class="logo">
                 <span class="logo-name">Tatiana Agudelo</span>
                 <span class="logo-art">Art</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#bio">Sobre Mí</a></li>
                 <li><a href="#gallery">Galería</a></li>
                 <li><a href="#body-mods">Perforaciones</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
+    <main>
     <!-- Sección Hero -->
     <section id="home" class="hero">
-        <div class="hero-bg">
+        <div class="hero-bg" aria-hidden="true">
             <div class="gradient-sphere sphere-1"></div>
             <div class="gradient-sphere sphere-2"></div>
             <div class="gradient-sphere sphere-3"></div>
@@ -118,16 +147,16 @@
         <div class="hero-content">
             <p class="hero-label reveal-text">Artista de la Modificación Personal</p>
             <h1 class="hero-title reveal-text-delay-1">Tatiana Agudelo</h1>
-            <p class="hero-description reveal-text-delay-2">Donde el arte se encuentra con la piel. Cada tatuaje cuenta una historia.</p>
+            <p class="hero-description reveal-text-delay-2">Tatuajes personalizados y piercings en Pereira. Diseños que transforman tus ideas en arte para tu piel.</p>
             <div class="hero-actions reveal-text-delay-3">
-                <a href="#gallery" class="btn-primary-apple">Ver Portafolio</a>
-                <a href="#contact" class="btn-secondary-apple">Reservar Sesión</a>
+                <a href="https://wa.me/573104899379?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20un%20tatuaje" target="_blank" rel="noopener noreferrer" class="btn-primary-apple">Cotizar mi tatuaje</a>
+                <a href="#gallery" class="btn-secondary-apple">Ver portafolio</a>
             </div>
         </div>
-        <div class="scroll-hint">
+        <a href="#bio" class="scroll-hint">
             <span>Desliza para explorar</span>
             <div class="scroll-line"></div>
-        </div>
+        </a>
     </section>
 
     <!-- Sección Sobre Mí -->
@@ -140,14 +169,17 @@
             <div class="bio-grid">
                 <div class="bio-visual">
                     <div class="bio-image-frame">
-                        <img src="TA.png" alt="Tatiana Agudelo, artista del tatuaje">
+                        <picture>
+                            <source type="image/webp" srcset="tatiana-agudelo-720.webp 720w, tatiana-agudelo-retrato.webp 1089w" sizes="(max-width: 380px) calc(100vw - 36px), (max-width: 576px) 340px, (max-width: 768px) 400px, (max-width: 1024px) 40vw, 450px">
+                            <img src="tatiana-agudelo-retrato.jpg" alt="Tatiana Agudelo mientras realiza un tatuaje" width="1089" height="1445" loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
                 <div class="bio-content">
                     <div class="bio-main">
                         <h3 class="bio-name">Tatiana Agudelo</h3>
                         <p class="bio-intro">
-                            Bienvenidos a mi espacio creativo. Soy una artista del tatuaje que cree que cada pieza de arte corporal debe ser tan única como la persona que la lleva. Mi enfoque combina precisión técnica con visión artística para crear tatuajes que realmente resuenen con tu historia.
+                            Bienvenidos a mi espacio creativo. Soy tatuadora en Pereira y creo que cada pieza de arte corporal debe ser tan única como la persona que la lleva. Mi enfoque combina precisión técnica con visión artística para crear tatuajes que realmente resuenen con tu historia.
                         </p>
                         <p class="bio-philosophy">
                             Me especializo en crear diseños personalizados que fluyen naturalmente con los contornos de tu cuerpo. Cada consulta es una conversación—escucho, entiendo y traduzco tus ideas en una obra de arte que te acompañará de por vida.
@@ -162,437 +194,464 @@
     <section id="gallery" class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Portafolio</h2>
-                <p class="section-subtitle">Una selección curada de trabajos recientes</p>
+                <h2 class="section-title">Portafolio de tatuajes en Pereira</h2>
+                <p class="section-subtitle">Explora una selección de trabajos y encuentra inspiración para tu próxima pieza</p>
             </div>
 
-            <div class="gallery-controls">
-                <button class="filter-btn" data-filter="blackwork">Blackwork</button>
-                <button class="filter-btn active" data-filter="dotwork">Dotwork</button>
-                <button class="filter-btn" data-filter="linea-fina">Línea fina</button>
-                <button class="filter-btn" data-filter="color">Color</button>
-                <button class="filter-btn" data-filter="cover-ups">Cover Ups</button>
+            <div class="gallery-controls" role="group" aria-label="Filtrar tatuajes por estilo">
+                <button class="filter-btn" type="button" data-filter="blackwork" aria-pressed="false">Blackwork</button>
+                <button class="filter-btn active" type="button" data-filter="dotwork" aria-pressed="true">Dotwork</button>
+                <button class="filter-btn" type="button" data-filter="linea-fina" aria-pressed="false">Línea fina</button>
+                <button class="filter-btn" type="button" data-filter="color" aria-pressed="false">Color</button>
+                <button class="filter-btn" type="button" data-filter="cover-ups" aria-pressed="false">Cover Ups</button>
             </div>
 
             <div class="gallery-masonry">
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-1" src="Blackwork/blackwork1.jpeg" alt="Tatuaje blackwork 01 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-1" src="Blackwork/blackwork1.jpeg" alt="Tatuaje blackwork de luna creciente con trazos de tinta en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-2" src="Blackwork/blackwork2.jpeg" alt="Tatuaje blackwork 02 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-2" src="Blackwork/blackwork2.jpeg" alt="Tatuaje blackwork de trazos oscuros en el cuello" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-3" src="Blackwork/blackwork3.jpeg" alt="Tatuaje blackwork 03 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-3" src="Blackwork/blackwork3.jpeg" alt="Tatuaje blackwork de patrones geométricos en el hombro y brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-4" src="Blackwork/Blackwork4.jpeg" alt="Tatuaje blackwork 04 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-4" src="Blackwork/Blackwork4.jpeg" alt="Tatuaje negro de formas curvas alrededor de la oreja" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-5" src="Blackwork/blackwork5.jpeg" alt="Tatuaje blackwork 05 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-5" src="Blackwork/blackwork5.jpeg" alt="Tatuaje blackwork de patrones geométricos y líneas en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-6" src="Blackwork/blackwork6.jpeg" alt="Tatuaje blackwork 06 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-6" src="Blackwork/blackwork6.jpeg" alt="Tatuaje negro de triángulos entrelazados y símbolos en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-7" src="Blackwork/Blackwork7.jpeg" alt="Tatuaje blackwork 07 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-7" src="Blackwork/Blackwork7.jpeg" alt="Tatuaje negro de líneas curvas que rodean el antebrazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-8" src="Blackwork/Blackwork8.jpeg" alt="Tatuaje blackwork 08 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-8" src="Blackwork/Blackwork8.jpeg" alt="Tatuaje blackwork geométrico de franjas entrelazadas" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="blackwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-blackwork-9" src="Blackwork/Blackwork9.jpeg" alt="Tatuaje blackwork 09 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-blackwork-9" src="Blackwork/Blackwork9.jpeg" alt="Tatuaje negro de brújula y símbolos en el antebrazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork1.jpeg" alt="Tatuaje dotwork 01 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork1.jpeg" alt="Tatuaje de león guardián con sombras de puntillismo en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 01</h4>
+                        <p class="gallery-caption-title">Dotwork 01</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-1" src="Linea Fina/Lineafina1.jpeg" alt="Tatuaje de línea fina 01 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-1" src="Linea Fina/Lineafina1.jpeg" alt="Tatuaje de nombre, fecha y corona en línea fina" width="1200" height="552" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-2" src="Linea Fina/Lineafina2.jpeg" alt="Tatuaje de línea fina 02 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-2" src="Linea Fina/Lineafina2.jpeg" alt="Tatuaje de línea fina con flores y la palabra familia" width="1200" height="552" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-3" src="Linea Fina/Lineafina3.jpeg" alt="Tatuaje de línea fina 03 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-3" src="Linea Fina/Lineafina3.jpeg" alt="Tatuaje de frase manuscrita en el brazo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-4" src="Linea Fina/Lineafina4.jpeg" alt="Tatuaje de línea fina 04 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-4" src="Linea Fina/Lineafina4.jpeg" alt="Tatuaje de ave fénix ornamental en el brazo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-5" src="Linea Fina/Lineafina5.jpeg" alt="Tatuaje de línea fina 05 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-5" src="Linea Fina/Lineafina5.jpeg" alt="Tatuaje de encendedor con humo en línea fina" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-6" src="Linea Fina/Lineafina6.jpeg" alt="Tatuaje de línea fina 06 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-6" src="Linea Fina/Lineafina6.jpeg" alt="Tatuaje geométrico de guitarra en el antebrazo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-7" src="Linea Fina/Lineafina7.jpeg" alt="Tatuaje de línea fina 07 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-7" src="Linea Fina/Lineafina7.jpeg" alt="Tatuaje de frase con letras de distintos estilos en el brazo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-8" src="Linea Fina/Lineafina8.jpeg" alt="Tatuaje de línea fina 08 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-8" src="Linea Fina/Lineafina8.jpeg" alt="Tatuaje de rostro de felino con flores y adornos en línea fina" width="675" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-9" src="Linea Fina/Lineafina9.jpeg" alt="Tatuaje de línea fina 09 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-9" src="Linea Fina/Lineafina9.jpeg" alt="Tatuaje ornamental con búho en la espalda" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-10" src="Linea Fina/Lineafina10.jpeg" alt="Tatuaje de línea fina 10 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-10" src="Linea Fina/Lineafina10.jpeg" alt="Tatuaje de carta de tarot La Emperatriz" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-11" src="Linea Fina/Lineafina11.jpeg" alt="Tatuaje de línea fina 11 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-11" src="Linea Fina/Lineafina11.jpeg" alt="Tatuaje ornamental de ojo y formas geométricas en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-12" src="Linea Fina/Lineafina12.jpeg" alt="Tatuaje de línea fina 12 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-12" src="Linea Fina/Lineafina12.jpeg" alt="Tatuaje de flores, letras y adornos a lo largo de la espalda" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-13" src="Linea Fina/Lineafina13.jpeg" alt="Tatuaje de línea fina 13 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-13" src="Linea Fina/Lineafina13.jpeg" alt="Tatuaje de palabra manuscrita con pequeño avión en el antebrazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-14" src="Linea Fina/Lineafina14.jpeg" alt="Tatuaje de línea fina 14 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-14" src="Linea Fina/Lineafina14.jpeg" alt="Tatuaje de palabra manuscrita detrás de la oreja" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-15" src="Linea Fina/Lineafina15.jpeg" alt="Tatuaje de línea fina 15 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-15" src="Linea Fina/Lineafina15.jpeg" alt="Tatuaje de balón de fútbol, latido y corazón" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-16" src="Linea Fina/Lineafina16.jpeg" alt="Tatuaje de línea fina 16 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-16" src="Linea Fina/Lineafina16.jpeg" alt="Tatuaje de flores y letras en la espalda con detalles rojos" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-17" src="Linea Fina/Lineafina17.jpeg" alt="Tatuaje de línea fina 17 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-17" src="Linea Fina/Lineafina17.jpeg" alt="Tatuaje de frase en letras pequeñas en el antebrazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-19" src="Linea Fina/Lineafina19.jpeg" alt="Tatuaje de línea fina 19 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-19" src="Linea Fina/Lineafina19.jpeg" alt="Tatuaje de la palabra gratitud en la parte superior del pecho" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-20" src="Linea Fina/Lineafina20.jpeg" alt="Tatuaje de línea fina 20 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-20" src="Linea Fina/Lineafina20.jpeg" alt="Tatuaje de letras góticas en vertical en el cuello" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-21" src="Linea Fina/Lineafina 21.jpeg" alt="Tatuaje de línea fina 21 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-21" src="Linea Fina/Lineafina 21.jpeg" alt="Tatuaje de animales caricaturescos en línea fina" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-22" src="Linea Fina/Lineafina22.jpeg" alt="Tatuaje de línea fina 22 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-22" src="Linea Fina/Lineafina22.jpeg" alt="Tatuajes de frases y dibujos delicados en varios brazos" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-23" src="Linea Fina/Lineafina23.jpeg" alt="Tatuaje de línea fina 23 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-23" src="Linea Fina/Lineafina23.jpeg" alt="Tatuaje de gato caricaturesco con la cabeza en una rebanada de pan" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-24" src="Linea Fina/Lineafina24.jpeg" alt="Tatuaje de línea fina 24 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-24" src="Linea Fina/Lineafina24.jpeg" alt="Tatuaje de nombre y fecha con una mariposa pequeña" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-25" src="Linea Fina/Lineafina25.jpeg" alt="Tatuaje de línea fina 25 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-25" src="Linea Fina/Lineafina25.jpeg" alt="Tatuaje de personaje animado con forma de llama" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="linea-fina">
                     <div class="gallery-frame">
-                        <img class="gallery-image-lineafina-26" src="Linea Fina/Lineafina26.jpeg" alt="Tatuaje de línea fina 26 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-lineafina-26" src="Linea Fina/Lineafina26.jpeg" alt="Tatuaje de rostro caricaturesco con gotas en línea fina" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork2.jpeg" alt="Tatuaje dotwork 02 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork2.jpeg" alt="Tatuaje de flores con sombras de puntillismo en el cuello" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 02</h4>
+                        <p class="gallery-caption-title">Dotwork 02</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork4.jpeg" alt="Tatuaje dotwork 04 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork4.jpeg" alt="Tatuaje dotwork de mandala floral en el cuello" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 04</h4>
+                        <p class="gallery-caption-title">Dotwork 04</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork6.jpeg" alt="Tatuaje dotwork 06 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork6.jpeg" alt="Tatuaje de rana guerrera sobre una tortuga" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 06</h4>
+                        <p class="gallery-caption-title">Dotwork 06</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork8.jpeg" alt="Tatuaje dotwork 08 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork8.jpeg" alt="Tatuaje de corazón anatómico dentro de una botella" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 08</h4>
+                        <p class="gallery-caption-title">Dotwork 08</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork9.jpeg" alt="Tatuaje dotwork 09 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork9.jpeg" alt="Tatuaje de retrato de perro con formas geométricas" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 09</h4>
+                        <p class="gallery-caption-title">Dotwork 09</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork11.jpeg" alt="Tatuaje dotwork 11 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork11.jpeg" alt="Tatuaje de personaje fantástico con detalles rojos en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 11</h4>
+                        <p class="gallery-caption-title">Dotwork 11</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork13.jpeg" alt="Tatuaje dotwork 13 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork13.jpeg" alt="Tatuaje de rana dentro de una composición geométrica" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 13</h4>
+                        <p class="gallery-caption-title">Dotwork 13</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img src="Dotwork/Dotwork14.jpeg" alt="Tatuaje dotwork 14 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img src="Dotwork/Dotwork14.jpeg" alt="Tatuaje de pulpo asomándose por una ventana circular, con puntillismo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Dotwork 14</h4>
+                        <p class="gallery-caption-title">Dotwork 14</p>
                         <p>Puntillismo de precisión</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-dotwork-15" src="Dotwork/Dotwork15.jpeg" alt="Tatuaje dotwork 15 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-dotwork-15" src="Dotwork/Dotwork15.jpeg" alt="Tatuaje de nombre en letra cursiva con detalles en el antebrazo" width="675" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-dotwork-16" src="Dotwork/Dotwork16.jpeg" alt="Tatuaje dotwork 16 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-dotwork-16" src="Dotwork/Dotwork16.jpeg" alt="Tatuaje de corona con nombre en el brazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-dotwork-17" src="Dotwork/Dotwork17.jpeg" alt="Tatuaje dotwork 17 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-dotwork-17" src="Dotwork/Dotwork17.jpeg" alt="Tatuaje ornamental de medio mandala en el costado" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-dotwork-18" src="Dotwork/Dotwork18.jpeg" alt="Tatuaje dotwork 18 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-dotwork-18" src="Dotwork/Dotwork18.jpeg" alt="Tatuaje dotwork de mandala alrededor del codo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="dotwork">
                     <div class="gallery-frame">
-                        <img class="gallery-image-dotwork-19" src="Dotwork/Dotwork19.jpeg" alt="Tatuaje dotwork 19 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-dotwork-19" src="Dotwork/Dotwork19.jpeg" alt="Tatuaje oscuro de calavera pirata con sombrero y tentáculos" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-1" src="Color/Color1.jpeg" alt="Tatuaje a color 01 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-1" src="Color/Color1.jpeg" alt="Tatuaje a color de escorpión con fondo violeta" width="675" height="1200" loading="lazy" decoding="async">
                     </div>
                     <div class="gallery-caption">
-                        <h4>Color</h4>
+                        <p class="gallery-caption-title">Color</p>
                         <p>Diseños vibrantes y personalizados</p>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-2" src="Color/Color2.jpeg" alt="Tatuaje a color 02 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-2" src="Color/Color2.jpeg" alt="Tatuaje geométrico a color de cabeza de ciervo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-3" src="Color/Color3.jpeg" alt="Tatuaje a color 03 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-3" src="Color/Color3.jpeg" alt="Tatuaje a color de pez koi y flores en el antebrazo" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-4" src="Color/Color4.jpeg" alt="Tatuaje a color 04 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-4" src="Color/Color4.jpeg" alt="Tatuaje a color de personaje de anime con cabello rosado" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-5" src="Color/Color5.jpeg" alt="Tatuaje a color 05 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-5" src="Color/Color5.jpeg" alt="Tatuaje de globo aerostático con un mapamundi a color" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-6" src="Color/Color6.jpeg" alt="Tatuaje a color 06 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-6" src="Color/Color6.jpeg" alt="Tatuaje de figura con cabeza de flor y acentos amarillos" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-7" src="Color/Color7.jpeg" alt="Tatuaje a color 07 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-7" src="Color/Color7.jpeg" alt="Tatuaje a color de mariposa azul y flores rosadas" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="color">
                     <div class="gallery-frame">
-                        <img class="gallery-image-color-8" src="Color/Color8.jpeg" alt="Tatuaje a color 08 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-color-8" src="Color/Color8.jpeg" alt="Tatuaje a color de una pluma con tonos rojos y azules" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="cover-ups">
                     <div class="gallery-frame">
-                        <img class="gallery-image-coverup-1" src="Cover Up/CoverUp 1.jpeg" alt="Cover up 01 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-coverup-1" src="Cover Up/CoverUp 1.jpeg" alt="Cover up de tatuaje con un sombrero de mago sombreado" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="cover-ups">
                     <div class="gallery-frame">
-                        <img class="gallery-image-coverup-2" src="Cover Up/CoverUp2.jpeg" alt="Cover up 02 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-coverup-2" src="Cover Up/CoverUp2.jpeg" alt="Cover up de tatuaje con una calavera en el antebrazo" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="cover-ups">
                     <div class="gallery-frame">
-                        <img class="gallery-image-coverup-3" src="Cover Up/CoverUp3.jpeg" alt="Cover up 03 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-coverup-3" src="Cover Up/CoverUp3.jpeg" alt="Cover up floral con líneas ornamentales en la espalda" width="900" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="cover-ups">
                     <div class="gallery-frame">
-                        <img class="gallery-image-coverup-4" src="Cover Up/CoverUp 4.jpeg" alt="Cover up 04 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-coverup-4" src="Cover Up/CoverUp 4.jpeg" alt="Cover up de tatuaje con rosa y hojas en la mano" width="960" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="cover-ups">
                     <div class="gallery-frame">
-                        <img class="gallery-image-coverup-5" src="Cover Up/Cover Up5.jpeg" alt="Cover up 05 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-coverup-5" src="Cover Up/Cover Up5.jpeg" alt="Cover up floral con girasol y hojas en el antebrazo" width="1200" height="675" loading="lazy" decoding="async">
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="cover-ups">
                     <div class="gallery-frame">
-                        <img class="gallery-image-coverup-6" src="Cover Up/CoverUp 6.jpeg" alt="Cover up 06 de Tatiana Agudelo" loading="lazy" decoding="async">
+                        <img class="gallery-image-coverup-6" src="Cover Up/CoverUp 6.jpeg" alt="Cover up de tatuaje con leona, cachorros y flores en la pierna" width="552" height="1200" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
 
-            <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+            <div class="specialties">
+                <div>
+                    <h3>Blackwork</h3>
+                    <p>Tinta negra, contrastes y patrones que dan fuerza a cada composición.</p>
+                </div>
+                <div>
+                    <h3>Dotwork</h3>
+                    <p>Puntos y texturas que construyen sombras y detalles con sutileza.</p>
+                </div>
+                <div>
+                    <h3>Línea fina</h3>
+                    <p>Trazos delicados para letras, ilustraciones y diseños personales.</p>
+                </div>
+                <div>
+                    <h3>Color</h3>
+                    <p>Una paleta de tonos que aporta vida y personalidad a cada idea.</p>
+                </div>
+                <div>
+                    <h3>Cover ups</h3>
+                    <p>Diseños pensados para transformar un tatuaje existente en una nueva pieza.</p>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <p>¿Tienes una idea para tu próximo tatuaje?</p>
+                <a href="https://wa.me/573104899379?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20un%20tatuaje" target="_blank" rel="noopener noreferrer" class="btn-secondary-apple">Cotizar por WhatsApp</a>
+            </div>
+
+            <div class="gallery-lightbox" id="galleryLightbox" inert role="dialog" aria-modal="true" aria-label="Imagen ampliada">
                 <button class="gallery-lightbox-close" type="button" aria-label="Cerrar imagen ampliada">
                     <i class="fas fa-times" aria-hidden="true"></i>
                 </button>
-                <img src="" alt="">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" width="1" height="1">
             </div>
         </div>
     </section>
@@ -601,8 +660,8 @@
     <section id="body-mods" class="body-mods-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Perforaciones</h2>
-                <p class="section-subtitle">Servicios profesionales de perforación corporal</p>
+                <h2 class="section-title">Piercings y perforaciones en Pereira</h2>
+                <p class="section-subtitle">Encuentra la perforación que acompaña tu estilo</p>
             </div>
 
             <!-- Sección Perforaciones -->
@@ -612,27 +671,27 @@
                         <div class="perforation-icon">
                             <i class="fas fa-gem"></i>
                         </div>
-                        <h4>Perforaciones Básicas</h4>
+                        <h3>Perforaciones Básicas</h3>
                         <p>Perforaciones de oreja, nariz y otras zonas realizadas con técnica estéril, joyería de calidad y orientación para sus cuidados.</p>
                         <div class="perforation-photo-gallery">
-                            <img class="perforation-photo-1" src="Perforaciones Basicas/Perforacionbasica1.jpeg" alt="Perforación de oreja" loading="lazy" decoding="async">
-                            <img class="perforation-photo-2" src="Perforaciones Basicas/Perforacionbasica2.jpeg" alt="Perforación de oreja con joya" loading="lazy" decoding="async">
-                            <img class="perforation-photo-3" src="Perforaciones Basicas/Perforacionbasica3.jpeg" alt="Perforación de ombligo" loading="lazy" decoding="async">
-                            <img class="perforation-photo-4" src="Perforaciones Basicas/Perforacionbasica4.jpeg" alt="Perforación de septum" loading="lazy" decoding="async">
-                            <img class="perforation-photo-5" src="Perforaciones Basicas/Perforacionbasica5.jpeg" alt="Perforación de nariz con joya" loading="lazy" decoding="async">
-                            <img class="perforation-photo-6" src="Perforaciones Basicas/Perforacionbasica6.jpeg" alt="Perforación de cartílago de oreja" loading="lazy" decoding="async">
-                            <img class="perforation-photo-7" src="Perforaciones Basicas/Perforacionbasica7.jpeg" alt="Perforación de lóbulo con joya" loading="lazy" decoding="async">
+                            <img class="perforation-photo-1" src="Perforaciones Basicas/Perforacionbasica1.jpeg" alt="Perforación de oreja durante el procedimiento" width="739" height="924" loading="lazy" decoding="async">
+                            <img class="perforation-photo-2" src="Perforaciones Basicas/Perforacionbasica2.jpeg" alt="Perforación de lóbulo con joya" width="675" height="1200" loading="lazy" decoding="async">
+                            <img class="perforation-photo-3" src="Perforaciones Basicas/Perforacionbasica3.jpeg" alt="Perforación de ombligo con joya" width="960" height="1200" loading="lazy" decoding="async">
+                            <img class="perforation-photo-4" src="Perforaciones Basicas/Perforacionbasica4.jpeg" alt="Perforación de septum con joya plateada" width="1080" height="607" loading="lazy" decoding="async">
+                            <img class="perforation-photo-5" src="Perforaciones Basicas/Perforacionbasica5.jpeg" alt="Perforación de nariz con joya" width="900" height="1200" loading="lazy" decoding="async">
+                            <img class="perforation-photo-6" src="Perforaciones Basicas/Perforacionbasica6.jpeg" alt="Perforaciones de cartílago y lóbulo con joyas" width="1200" height="900" loading="lazy" decoding="async">
+                            <img class="perforation-photo-7" src="Perforaciones Basicas/Perforacionbasica7.jpeg" alt="Perforación de lóbulo con joya de estrella" width="900" height="1200" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="perforation-card">
                         <div class="perforation-icon">
                             <i class="fas fa-link"></i>
                         </div>
-                        <h4>Microdermales y Piercings Avanzados</h4>
+                        <h3>Microdermales y Piercings Avanzados</h3>
                         <p>Implantes de anclaje de un solo punto y piercings avanzados realizados con técnica estéril, joyería de calidad y orientación para sus cuidados.</p>
                         <div class="perforation-photo-gallery">
-                            <img src="Microdermal y piercings avanzados/Avanzado1.jpeg" alt="Microdermal en el torso" loading="lazy" decoding="async">
-                            <img src="Microdermal y piercings avanzados/Avanzado2.jpeg" alt="Piercing avanzado" loading="lazy" decoding="async">
+                            <img src="Microdermal y piercings avanzados/Avanzado1.jpeg" alt="Microdermal con joya en el torso" width="934" height="1010" loading="lazy" decoding="async">
+                            <img src="Microdermal y piercings avanzados/Avanzado2.jpeg" alt="Perforaciones con joyas en el pecho" width="1080" height="1080" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -640,9 +699,9 @@
 
             <!-- CTA Consulta -->
             <div class="mods-cta">
-                <h3>¿Lista para Expresarte?</h3>
-                <p>Cada modificación es un viaje personal. Reserva una consulta para discutir tu visión, seguridad y cuidados posteriores.</p>
-                <a href="#contact" class="btn-primary-apple">Reservar Consulta</a>
+                <h3>¿Tienes una perforación en mente?</h3>
+                <p>Cuéntame qué piercing te interesa y conversemos sobre tu idea y sus cuidados.</p>
+                <a href="https://wa.me/573104899379?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20consultar%20por%20una%20perforaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-primary-apple">Consultar por WhatsApp</a>
             </div>
         </div>
     </section>
@@ -654,7 +713,7 @@
                 <div class="contact-info-panel">
                     <h2 class="contact-heading">Creemos Algo<br>Hermoso Juntos</h2>
                     <p class="contact-description">
-                        ¿Lista para comenzar tu viaje de tatuaje? Ya sea que tengas un concepto detallado o solo una chispa de una idea, estoy aquí para ayudarte a darle vida.
+                        Para solicitar una cotización, escríbeme por WhatsApp y cuéntame tu idea. Si los tienes, comparte el tamaño aproximado, la zona del cuerpo y algunas imágenes de referencia.
                     </p>
 
                     <div class="contact-methods">
@@ -663,7 +722,7 @@
                                 <i class="fab fa-instagram"></i>
                             </div>
                             <div class="contact-text">
-                                <h4>Instagram</h4>
+                                <h3>Instagram</h3>
                                 <p>@tatianaagudelo.art</p>
                             </div>
                         </a>
@@ -673,8 +732,8 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-text">
-                                <h4>Ubicación del Estudio</h4>
-                                <p>Pereira</p>
+                                <h3>Ubicación</h3>
+                                <p>Pereira, Risaralda</p>
                             </div>
                         </div>
 
@@ -683,7 +742,7 @@
                                 <i class="fab fa-whatsapp"></i>
                             </div>
                             <div class="contact-text">
-                                <h4>Chat por WhatsApp</h4>
+                                <h3>Chat por WhatsApp</h3>
                                 <p>Escríbeme directamente</p>
                             </div>
                         </a>
@@ -693,8 +752,8 @@
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-text">
-                                <h4>Teléfono</h4>
-                                <p>+57 310 489 9379</p>
+                                <h3>Teléfono</h3>
+                                <p>+57&nbsp;310&nbsp;489&nbsp;9379</p>
                             </div>
                         </a>
                     </div>
@@ -702,6 +761,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer-apple">
@@ -716,7 +777,7 @@
                 </div>
 
                 <div class="footer-nav">
-                    <h4>Navegación</h4>
+                    <p class="footer-heading">Navegación</p>
                     <ul>
                         <li><a href="#home">Inicio</a></li>
                         <li><a href="#bio">Sobre Mí</a></li>
@@ -727,7 +788,7 @@
                 </div>
 
                 <div class="footer-social">
-                    <h4>Conecta</h4>
+                    <p class="footer-heading">Conecta</p>
                     <div class="footer-social-links">
                         <a href="https://www.instagram.com/tatianaagudelo.art" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-instagram"></i>
@@ -742,8 +803,11 @@
                 <p class="made-with">Creado por creatorforge</p>
             </div>
         </div>
+        <a class="whatsapp-float" href="https://wa.me/573104899379?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20cotizar%20un%20tatuaje" target="_blank" rel="noopener noreferrer" aria-label="Cotizar mi tatuaje por WhatsApp">
+            <svg viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M380.9 97.1C339-4.6 216.9-43.3 125.8 14.2 40.3 68.2 17.7 178.3 67 259.2L32 384l128.2-33.6c78.6 42.6 178.6 18.1 226.5-56.6 38.4-59.8 36.2-136.4-5.8-196.7zM224.1 338c-27.4 0-54.1-7.4-77.4-21.3l-5.5-3.3-76.1 20 20.3-74.1-3.6-5.7C37 181.6 59.1 86.7 131.1 41.9c72-44.8 166.9-22.7 211.7 49.3s22.7 166.9-49.3 211.7c-20.8 13-44.9 19.8-69.4 19.8zm84.7-113.5c-4.6-2.3-27.3-13.5-31.5-15s-7.3-2.3-10.4 2.3-11.9 15-14.6 18.1-5.4 3.5-10 1.2c-27.3-13.6-45.2-24.3-63.2-55.2-4.8-8.2 4.8-7.6 13.6-25.1 1.5-3.1.8-5.8-.4-8.1-1.2-2.3-10.4-25.1-14.2-34.4-3.7-9-7.5-7.8-10.4-7.9l-8.9-.2c-3.1 0-8.1 1.2-12.3 5.8s-16.2 15.8-16.2 38.5 16.5 44.7 18.8 47.8 32.5 49.6 78.7 69.5c29.2 12.6 40.7 13.7 55.3 11.5 8.9-1.3 27.3-11.2 31.1-22s3.8-20.1 2.7-22-4.2-3.1-8.8-5.4z"/></svg>
+        </a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer onerror="document.documentElement.classList.remove('gallery-pending'); document.documentElement.classList.replace('js', 'no-js');"></script>
 </body>
 </html>
